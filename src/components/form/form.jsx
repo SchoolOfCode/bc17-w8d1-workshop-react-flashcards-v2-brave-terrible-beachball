@@ -1,7 +1,24 @@
 import React from 'react';
+import './form.css'
+import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
 
 export default function Form(){
-        return(
+    
+    const [inputs, setInputs] = useState({});
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs(values => ({...values, [name]: value}))
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(inputs);
+  }
+
+    return(
             <>
             <form>
                 <label for="question">Question:</label>
