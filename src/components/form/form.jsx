@@ -2,6 +2,7 @@ import React from 'react';
 import './form.css'
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import flashcardList from '../form'
 
 export default function Form(){
     const [question, setQuestion] = useState("");
@@ -17,9 +18,13 @@ export default function Form(){
     setAnswer(value)
   }
 
-  const handleSubmit = (event) => {
+   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ question, answer });
+
+    let newCard = ({question, answer})
+    flashcardList.push(newCard)
+    console.log(flashcardList)
   }
 
     return(

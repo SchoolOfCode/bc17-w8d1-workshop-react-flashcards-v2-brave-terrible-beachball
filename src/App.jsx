@@ -7,11 +7,14 @@ import Header from "./components/header/header.jsx"
 import Footer from "./components/footer/footer.jsx"
 import Flashcards from "./components/flashcards/flashcards.jsx"
 import Form from "./components/form/form.jsx"
-
 import './App.css'
+
+
 
 function App() {
   
+  const flashcardList = [{question:"hdwjeowei" ,answer:"hdahiuha"}, {question:"hdwjeowei" ,answer:"hdahiuha"}]
+
 
   return (
     <>

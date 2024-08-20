@@ -1,9 +1,16 @@
 import React from 'react';
 import Flashcard from "./flashcard/flashcard.jsx"
 
-export default function Flashcards(){
 
-    const flashcardList = [{question:"hdwjeowei" ,answer:"hdahiuha"}, {question:"hdwjeowei" ,answer:"hdahiuha"}]
+
+
+
+
+export default function Flashcards(){
+  const flashcardList = [{question:"QUESTION ONE" ,answer:"ANSWER ONE"}, {question:"QUESTION TWO" ,answer:"ANSWER TWO"}]
+
+    
+
     return (
         <>
         <div className='flashcardContainer'>
